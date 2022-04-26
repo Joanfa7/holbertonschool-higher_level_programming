@@ -19,4 +19,4 @@
 15. What’s a traceback  
 16. What are the arithmetic operators and how to use them  
 
-#![loops](https://w0.peakpx.com/wallpaper/458/27/HD-wallpaper-reptiles-python-snake.jpg)
+![loops](https://w0.peakpx.com/wallpaper/458/27/HD-wallpaper-reptiles-python-snake.jpg)
