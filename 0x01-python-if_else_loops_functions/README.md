@@ -1,6 +1,6 @@
 # 0x01. Python - if/else, loops, functions
 
-## Learning Objectives
+## Learning Objectives  
 
 1. Why Python programming is awesome  
 2. Why indentation is so important in Python  
