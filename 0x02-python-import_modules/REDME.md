@@ -1,4 +1,4 @@
-#0x02. Python - import & modules
+# 0x02. Python - import & modules
 
 ## Learnign Objetives
 
@@ -10,4 +10,4 @@
 6. How to prevent code in your script from being executed when imported
 6. How to use command line arguments with your Python programs
 
-![module](https://robocrop.realpython.net/?url=https%3A//files.realpython.com/media/Python-Modules-and-Packages-An-Introduction_Watermarked.20936240a94d.jpg)
+![module](https://www.educative.io/edpresso/what-are-python-modules)
