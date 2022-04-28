@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys
+from sys import argv
+if __name__ == "__main__:"
 
 length = len(sys.argv)-1
 ctr = 0
