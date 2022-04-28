@@ -10,4 +10,4 @@
 6. How to prevent code in your script from being executed when imported
 6. How to use command line arguments with your Python programs
 
-![module](https://www.educative.io/edpresso/what-are-python-modules)
+![module](https://python-tricks.com/wp-content/uploads/2019/09/Modules-in-Python-450x338.jpg)
