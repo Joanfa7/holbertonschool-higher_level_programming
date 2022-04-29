@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-import string
-
-if __main__ == __name__:
-    result = string.ascii_uppercase
-    print(result)
+from string import ascii_uppercase
+print(ascii_uppercase)
