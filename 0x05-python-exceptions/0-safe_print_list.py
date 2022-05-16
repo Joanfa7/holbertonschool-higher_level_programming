@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
         try:
             print(my_list[i], end='')
             ctr += 1
-        except:
+        except TypeError:
             continue
 
     print()
