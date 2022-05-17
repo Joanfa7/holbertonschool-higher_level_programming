@@ -23,4 +23,4 @@
 19. How does Python find the attributes of an object or class
 20. How to use the getattr function
 
-#![Objects](https://intellipaat.com/mediaFiles/2019/03/python10.png)
+![Objects](https://intellipaat.com/mediaFiles/2019/03/python10.png)
