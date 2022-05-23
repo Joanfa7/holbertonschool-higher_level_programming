@@ -9,3 +9,5 @@
 5. How to write documentation for each module and function
 6. What are the basic option flags to create tests
 7. How to find edge cases
+
+![TDD](https://marsner.com/wp-content/uploads/test-driven-development-TDD.png)
