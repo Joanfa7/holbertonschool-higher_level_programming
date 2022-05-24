@@ -17,4 +17,4 @@
 13. What are the built-in immutable types
 14. How does Python pass variables to functions
 
-[Objects](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Python-Objects-01.jpg)
+![Objects](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Python-Objects-01.jpg)
