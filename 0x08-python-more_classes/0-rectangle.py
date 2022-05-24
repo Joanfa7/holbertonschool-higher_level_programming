@@ -2,6 +2,6 @@
 """ Define a rectangle class object """
 
 
-class Rectagle:
+class Rectangle:
     """ Rectangle Object """
     pass
