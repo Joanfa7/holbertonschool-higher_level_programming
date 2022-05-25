@@ -59,4 +59,4 @@ class Rectangle:
 
     def __delete__(self, Rectangle):
         print("Bye rectangle...")
-        del self.Rectangle
+        del Rectangle
