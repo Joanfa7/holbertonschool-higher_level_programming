@@ -1,0 +1,44 @@
+============================================
+''' This is the Start of Unit Testing... '''
+============================================
+
+======================================
+''' Importing TEMPLATE function''''
+======================================
+>>> print_square = __import__('4-print_square').print_square
+
+
+==============
+SUCCESS CASES
+==============
+
+
+Category 1
+==========
+
+Test 1: size is int
+  >>> print_square(5)
+  #####
+  #####
+  #####
+  #####
+  #####
+
+==========================
+CASES THAT SHOULD NOT WORK
+==========================
+
+Category 2
+==========
+
+Test 2: size is not int
+  >>> print_square("hello")
+  Traceback (most recent call last):
+  ...
+  TypeError: size must be an integer
+
+Test 3: size is less than 0
+  >>> print_square(-86)
+  Traceback (most recent call last):
+  ...
+  ValueError: size must be >= 0
