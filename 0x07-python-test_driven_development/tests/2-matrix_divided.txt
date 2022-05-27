@@ -1,0 +1,88 @@
+===========================================
+''' This is the Start of Unit Testing... '''
+============================================
+''' TESTTING WITH the following... '''
+
+''' Does the same as test below, but gives more details '''
+# python3 -m doctest -v ./tests/file_name.txt
+# python3 -m doctest -v ./tests/file_name.txt | tail -2
+
+======================================
+''' Importing TEMPLATE function'''
+======================================
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+==============
+SUCCESS CASES
+==============
+
+
+Category 1
+==========
+
+Test 1: 2 dim matrix
+	''' Expecting: [[0.33, 0.67], [1.33, 1.67]] '''
+
+>>> matrix = [[1, 2], [4, 5]]
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67], [1.33, 1.67]]
+
+
+=============================
+
+Test 2: Negative Num
+
+  ''' Expecting: [[-0.33, -0.67], [-1.33, -1.67]] '''
+
+>>> matrix =  [[1, 2], [4, 5]]
+>>> matrix_divided(matrix, -3)
+[[-0.33, -0.67], [-1.33, -1.67]]
+
+================================
+
+Test 3: Matrix with negative numbers
+
+  ''' Expecting:[[0.33, 0.67], [1.33, 1.67]]'''
+
+>>> matrix =  [[-1, -2], [-4, -5]]
+>>> matrix_divided(matrix, -3)
+[[0.33, 0.67], [1.33, 1.67]]
+
+==========================
+CASES THAT SHOULD NOT WORK
+==========================
+
+Category 2
+==========
+
+Test 4: div == 0
+  ''' Raise ZeroDivisionError '''
+
+>>> matrix = [[1, 2, 3, 3], [4, 5, 6, 3]]
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+  ...
+ZeroDivisionError: division by zero
+
+========================================
+
+Test 5: div == None
+  ''' Raise TypeError '''
+
+>>> matrix = [[1, 2, 3, 3], [4, 5, 6, 3]]
+>>> matrix_divided(matrix, None)
+Traceback (most recent call last)
+  ...
+TypeError: div must be a number
+
+========================================
+
+Test 6: div == 'three'
+  ''' Raise TypeError '''
+
+>>> matrix = [[1, 2, 3, 3], [4, 5, 6, 3]]
+>>> matrix_divided(matrix, "three")
+Traceback (most recent call last)
+  ...
+TypeError: div must be a number
+
