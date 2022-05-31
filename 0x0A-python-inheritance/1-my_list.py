@@ -6,4 +6,3 @@ class MyList(list):
     """ MyList class ineriting from list"""
     def print_sorted(self):
         print(sorted(self))
-
