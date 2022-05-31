@@ -2,8 +2,8 @@
 """ Creates an empty class"""
 
 
-
 variable = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(variable):
     """ Rectablge object inheritate from BaseGeometry """
