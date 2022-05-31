@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" check if an object is an instance of a clsas that inherited from 
+""" check if an object is an instance of a clsas that inherited from
     the specified class """
 
 
