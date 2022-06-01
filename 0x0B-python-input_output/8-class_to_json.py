@@ -5,6 +5,4 @@
 
 def class_to_json(obj):
     """ object class """
-
-    
     return obj.__dict__
