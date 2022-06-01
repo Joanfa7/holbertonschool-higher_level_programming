@@ -10,8 +10,8 @@ class Rectangle(variable):
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
-        super().integer_validator("width", width)
-        super().integer_validator("height", height)
+        variable.integer_validator(self, "width", self.__width)
+        variable.integer_validator(self, "height", self.__height)
 
     def area(self):
         return self.__width * self.__height
