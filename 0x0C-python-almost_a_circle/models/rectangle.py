@@ -46,13 +46,13 @@ class Rectangle(Base):
 
 
     @property
-    """ x property """
     def x(self):
+        """ x property """
         return self.__x
 
     @x.setter
-    """ x setter """
     def x(self, value):
+        """ x setter """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -62,16 +62,20 @@ class Rectangle(Base):
 
 
     @property
-    """ y property """
     def y(self):
+        """ y property """
         return self.__y
 
     @y.setter
-    """ y setter """
     def y(self, value):
+        """ y setter """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be > 0")
         self.__y = value
+
+    def area(self):
+        """ area of a rectangle h*w """
+        return self.__width * self.__height
 
