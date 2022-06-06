@@ -9,5 +9,5 @@
 5. What is **kwargs and how to use it
 6. How to handle named arguments in a function
 
-#[Cirle](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4)
+![Cirle](https://editorial.designtaxi.com/editorial-images/news-Circle101019/Draw-Circle-Game-1.jpg)
 
