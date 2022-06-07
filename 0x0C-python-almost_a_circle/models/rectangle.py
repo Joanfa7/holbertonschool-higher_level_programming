@@ -8,8 +8,8 @@ from models.base import Base
 class Rectangle(Base):
     """ Rectangle class """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
@@ -89,3 +89,8 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print("#", end='')
             print()
+
+    def __str__(self):
+        """ method """
+        string = "[Rectangle] ({}) {}/{} - {}/{}"
+        return string.format(self.id, self.__x, self.__y, self.__width, self.__height)
