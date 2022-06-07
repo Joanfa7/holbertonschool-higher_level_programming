@@ -89,3 +89,29 @@ class Rectangle(Base):
         """ method """
         string = "[Rectangle] ({}) {}/{} - {}/{}"
         return string.format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """ setting arguments """
+        for idx in range(len(args)):
+            if idx == 0:
+                self.id = args[idx]
+            if idx == 1:
+                self.width = args[idx]
+            if idx == 2:
+                self.height = args[idx]
+            if idx == 3:
+                self.x = args[idx]
+            if idx == 4:
+                self.y = args[idx]
+
+        for key, value in kwargs.items():
+            if key == 'id':
+                self.id = value
+            if key == 'width':
+                self.width = value
+            if key == 'height':
+                self.height = value
+            if key == 'x':
+                self.x = value
+            if key == 'y':
+                self.y = value

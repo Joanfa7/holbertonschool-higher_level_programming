@@ -16,12 +16,34 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """ setter of size """
         self.width = value
         self.height = value
 
     def __str__(self):
-        string = "[Square] ({}) {}/{} - {}/{}"
-        return string.format(self.id, self.x, self.y, self.width, self.height)
+        """ str model """
+        string = "[Square] ({}) {}/{} - {}"
+        return string.format(self.id, self.x, self.y, self.size)
 
+    def update(self, *args, **kwargs):
+        """ setting arguments """
+        for idx in range(len(args)):
+            if idx == 0:
+                self.id = args[idx]
+            if idx == 1:
+                self.size = args[idx]
+            if idx == 2:
+                self.x = args[idx]
+            if idx == 3:
+                self.y = args[idx]
 
+        for key, value in kwargs.items():
+            if key == 'id':
+                self.id = value
+            if key == 'size':
+                self.width = value
+            if key == 'x':
+                self.x = value
+            if key == 'y':
+                self.y = value
 
