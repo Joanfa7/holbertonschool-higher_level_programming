@@ -35,15 +35,15 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """ setting arguments """
         if args and args is not None:
-            for idx in enumerate(args):
+            for idx, b in enumerate(args):
                 if idx == 0:
-                    self.id = args[idx]
+                    self.id = args[0]
                 if idx == 1:
-                    self.size = args[idx]
+                    self.size = args[1]
                 if idx == 2:
-                    self.x = args[idx]
+                    self.x = args[2]
                 if idx == 3:
-                    self.y = args[idx]
+                    self.y = args[3]
         else:
             if kwargs is not None:
                 for key, value in kwargs.items():
