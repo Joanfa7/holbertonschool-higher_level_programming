@@ -104,7 +104,7 @@ class Rectangle(Base):
             elif idx == 4:
                 self.y = args[idx]
         else:
-            if kwargs in not None:
+            if kwargs is not None:
                 for key, value in kwargs.items():
                     setattr(self, key, value)
 
