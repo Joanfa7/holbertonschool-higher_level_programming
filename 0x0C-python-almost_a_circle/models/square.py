@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" Square Object """
 
 from models.rectangle import Rectangle
 
