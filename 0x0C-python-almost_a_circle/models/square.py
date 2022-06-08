@@ -27,23 +27,23 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """ setting arguments """
-        for idx in range(len(args)):
-            if idx == 0:
-                self.id = args[idx]
-            if idx == 1:
-                self.size = args[idx]
-            if idx == 2:
-                self.x = args[idx]
-            if idx == 3:
-                self.y = args[idx]
+        if args and args is not None:
+            for idx in enumerate(args):
+                if idx == 0:
+                    self.id = args[idx]
+                if idx == 1:
+                    self.size = args[idx]
+                if idx == 2:
+                    self.x = args[idx]
+                if idx == 3:
+                    self.y = args[idx]
+        else:
+            if kwardgs is not None:
+                for key, value in kwargs.items():
+                    setattr(self, key, value)
 
-        for key, value in kwargs.items():
-            if key == 'id':
-                self.id = value
-            if key == 'size':
-                self.width = value
-            if key == 'x':
-                self.x = value
-            if key == 'y':
-                self.y = value
+    def to_dictionary(self):
+        """ Scuaret dictionary """
+        return {'id': self.id, 'x': self.x, 'size': self.size 'y': self.y}
+
 
