@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Square Object """
 
+
 from models.rectangle import Rectangle
 
 
@@ -15,8 +16,6 @@ class Square(Rectangle):
         """ str model """
         string = "[Square] ({}) {}/{} - {}"
         return string.format(self.id, self.x, self.y, self.size)
-
-
 
     @property
     def size(self):
@@ -53,5 +52,3 @@ class Square(Rectangle):
     def to_dictionary(self):
         """ Scuaret dictionary """
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
-
-
