@@ -2,6 +2,9 @@
 """ manage id attribute in all classes """
 
 
+import json
+
+
 class Base:
     """ Base class object """
 
@@ -13,3 +16,9 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictrionaries):
+        if not list_dictrionaries or list_dictrionaries is  None:
+            return "[]"
+        return json.dumps(list_dictrionaries)
