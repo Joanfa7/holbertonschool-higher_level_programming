@@ -5,7 +5,7 @@ import MySQLdb
 
 if __name__ == "__main__":
 
-    db = MySQLdb.connect(host="localhost", user="root", password="root",
+    db = MySQLdb.connect(host="localhost", port=3306, user="root", password="root",
                          database="hbtn_0e_0_usa")
 
     cursor = db.cursor()
@@ -16,3 +16,6 @@ if __name__ == "__main__":
 
     for row in result:
         print(row)
+    cursor.close()
+    connector.close()
+

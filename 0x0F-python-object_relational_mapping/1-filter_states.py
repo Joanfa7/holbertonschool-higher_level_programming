@@ -16,3 +16,5 @@ if __name__ == "__main__":
 
     for row in result:
         print(row)
+    curson.close()
+    connector.close()
