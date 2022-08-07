@@ -21,6 +21,6 @@ if __name__ == "__main__":
     city = ()
     for row in result:
         city += row
-        print(', '.join(city))
+    print(', '.join(city))
     cursor.close()
     db.close()
