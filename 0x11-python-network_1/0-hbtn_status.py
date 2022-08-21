@@ -8,6 +8,6 @@ if __name__ == "__main__":
         data = respo.read()
         print("Body response:")
         print("    - type: {}".format(type(data)))
-        print("    - content: {}".format(type(data)))
-        print("    - utf8 content: {}".format(type(data.decode("UTF-8"))))
+        print("    - content: {}".format(data))
+        print("    - utf8 content: {}".format(data.decode("utf-8")))
 
