@@ -8,6 +8,6 @@ import requests
 if __name__ == "__main__":
     reque = requests.get(argv[1])
     if reque.status_code >= 400:
-        print("Error code: {}".format(req.status_code))
+        print("Error code: {}".format(reque.status_code))
     else:
-        print(req.text)
+        print(reque.text)
