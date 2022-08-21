@@ -7,4 +7,4 @@ import requests
 
 if __name__ == "__main__":
     reque = requests.get('argv[1]')
-    print(r.headers.get('X-Request-Id'))
+    print(reque.headers.get('X-Request-Id'))
