@@ -7,15 +7,12 @@ const URL = process.argv[2];
 
 axios.get(URL)
   .then(function (response) {
-    // handle success
-    console.log(response);
+	for(var key in response){
+		if( key == "status"){
+		console.log(`code: ${response[key]}`);
+		}
+	}
   })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
- /* .then(function () {
-    // always executed
-  });*/
+
 
 
