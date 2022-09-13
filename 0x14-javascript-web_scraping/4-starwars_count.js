@@ -8,8 +8,8 @@ request(character, function (error, response, body) {
   if (error) {
     console.error(error);
   }
-  const nb = JSON.parse(body).result.filter((elem) => {
-    return elem.characters.filter((url) => { return url.include('18'); }).lenght;
+  const nb = JSON.parse(body).results.filter((elem) => {
+    return elem.characters.filter((url) => { return url.includes('18'); }).length;
   }).length;
   console.log(nb);
 });
